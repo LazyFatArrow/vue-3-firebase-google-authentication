@@ -1,8 +1,7 @@
 import { createApp } from 'vue'
-import './style.css'
 import App from './App.vue'
-import { setup } from './services/firebase.service'
+import { setup as setupFirebase } from '@/services/firebase.service'
 
-setup()
+setupFirebase()
 
 createApp(App).mount('#app')
